@@ -1,0 +1,5 @@
+ro.product.brand=BLU
+ro.product.name=G90
+ro.product.device=G90
+ro.build.product=G90
+ro.treble.enabled=true
