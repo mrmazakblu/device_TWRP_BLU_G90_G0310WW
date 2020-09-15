@@ -131,10 +131,10 @@ TW_INCLUDE_CRYPTO := false
 # TW_INCLUDE_CRYPTO_FBE := true
 # TW_INCLUDE_FBE_METADATA_DECRYPT := true
 # BOARD_USES_METADATA_PARTITION := true
-TW_CRYPTO_FS_TYPE := "ext4"
-TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
-TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,barrier=0,data=ordered"
+# TW_CRYPTO_FS_TYPE := "ext4"
+# TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
+# TW_CRYPTO_MNT_POINT := "/data"
+# TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,barrier=0,data=ordered"
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
