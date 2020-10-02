@@ -1,0 +1,60 @@
+--------- beginning of main
+06-23 20:40:48.111   327   327 W auditd  : type=2000 audit(0.0:1): initialized
+06-23 20:40:48.996   327   327 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+06-23 20:40:49.076   315   315 I init    : type=1400 audit(0.0:4): avc: denied { read } for name="bin" dev="rootfs" ino=7356 scontext=u:r:vendor_init:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+06-23 20:40:49.308   327   327 I init    : type=1400 audit(0.0:5): avc: denied { entrypoint } for path="/system/bin/logd" dev="rootfs" ino=7459 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+06-23 20:40:49.308     1     1 I init    : type=1400 audit(0.0:6): avc: denied { module_request } for kmod="fs-functionfs" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+06-23 20:40:49.312   327   327 I logd    : type=1400 audit(0.0:7): avc: denied { read } for path="/system/bin/logd" dev="rootfs" ino=7459 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+06-23 20:40:49.312   327   327 I logd    : type=1400 audit(0.0:8): avc: denied { execute } for path="/system/bin/logd" dev="rootfs" ino=7459 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+06-23 20:40:49.312   327   327 I logd    : type=1400 audit(0.0:9): avc: denied { getattr } for path="/system/bin/logd" dev="rootfs" ino=7459 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+06-23 20:40:49.328   327   327 E libprocessgroup: Failed to read task profiles from /etc/task_profiles.json
+06-23 20:40:49.328   327   327 E libprocessgroup: Loading /etc/task_profiles.json for [327] failed
+06-23 20:40:49.328   327   327 W libprocessgroup: Failed to find HighEnergySavingtask profile: No such file or directory
+06-23 20:40:49.328   327   327 W libprocessgroup: Failed to find TimerSlackHightask profile: No such file or directory
+06-23 20:40:49.328   327   333 W libprocessgroup: Failed to find HighEnergySavingtask profile: Success
+06-23 20:40:49.328   327   333 W libprocessgroup: Failed to find TimerSlackHightask profile: Success
+06-23 20:40:49.436   331   331 I recovery: type=1400 audit(0.0:15): avc: denied { getattr } for path="/sys/devices/virtual/thermal/thermal_zone1/temp" dev="sysfs" ino=21499 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+06-23 20:40:49.436   331   331 I recovery: type=1400 audit(0.0:16): avc: denied { write } for name="brightness" dev="sysfs" ino=27922 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+06-23 20:40:49.436   331   331 I recovery: type=1400 audit(0.0:17): avc: denied { open } for path="/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness" dev="sysfs" ino=27922 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+06-23 20:40:49.436   331   331 I recovery: type=1400 audit(0.0:18): avc: denied { read write } for name="card0" dev="tmpfs" ino=9410 scontext=u:r:recovery:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+06-23 20:40:49.436   331   331 I recovery: type=1400 audit(0.0:19): avc: denied { open } for path="/dev/dri/card0" dev="tmpfs" ino=9410 scontext=u:r:recovery:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+06-23 20:40:50.172   331   331 I recovery: type=1400 audit(0.0:20): avc: denied { write } for name="brightness" dev="sysfs" ino=27922 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+06-23 20:40:50.172   331   331 I recovery: type=1400 audit(0.0:21): avc: denied { open } for path="/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness" dev="sysfs" ino=27922 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+06-23 20:40:50.172   331   331 I recovery: type=1400 audit(0.0:22): avc: denied { getattr } for path="/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness" dev="sysfs" ino=27922 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+06-23 20:40:50.196   331   331 I recovery: type=1400 audit(0.0:23): avc: denied { execmem } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=process permissive=1
+06-23 20:40:50.196   331   331 I recovery: type=1400 audit(0.0:24): avc: denied { execute } for path="/dev/ashmem" dev="tmpfs" ino=14422 scontext=u:r:recovery:s0 tcontext=u:object_r:ashmem_device:s0 tclass=chr_file permissive=1
+06-23 20:40:50.200   331   331 E ashmem  : Failed to dlopen() libashmemd_client.so: dlopen failed: library "libashmemd_client.so" not found
+06-23 20:40:50.200   331   331 I ArmToArm64Assembler: generated scanline__00000077:03010101_00008001_00000000 [195 ipp] (241 ins) at [0x7fa43d03c0:0x7fa43d0784] in 102385 ns
+06-23 20:40:50.226   331   331 I ArmToArm64Assembler: generated scanline__00000077:03545401_00000A01_00000000 [ 69 ipp] (113 ins) at [0x7fa43d0790:0x7fa43d0954] in 83769 ns
+06-23 20:40:50.236   331   331 I ArmToArm64Assembler: generated scanline__00000077:03545401_00000A08_00000000 [ 69 ipp] (116 ins) at [0x7fa43d0960:0x7fa43d0b30] in 89769 ns
+06-23 20:40:50.256   331   331 I recovery: type=1400 audit(0.0:25): avc: denied { write } for name="etc" dev="rootfs" ino=7589 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+06-23 20:40:50.256   331   331 I recovery: type=1400 audit(0.0:26): avc: denied { add_name } for name="mtab" scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+06-23 20:40:50.256   331   331 I recovery: type=1400 audit(0.0:27): avc: denied { create } for name="mtab" scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=lnk_file permissive=1
+06-23 20:40:50.256   331   331 I recovery: type=1400 audit(0.0:28): avc: denied { create } for name="system_root" scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+06-23 20:40:50.260   331   331 I recovery: type=1400 audit(0.0:29): avc: denied { remove_name } for name="product" dev="rootfs" ino=7246 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+06-23 20:40:50.260   331   331 I recovery: type=1400 audit(0.0:30): avc: denied { unlink } for name="product" dev="rootfs" ino=7246 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=lnk_file permissive=1
+06-23 20:40:50.296   331   331 I /system/bin/recovery: [libfs_mgr]Created logical partition product on device /dev/block/dm-0
+06-23 20:40:50.298   331   331 I /system/bin/recovery: [libfs_mgr]Created logical partition system on device /dev/block/dm-1
+06-23 20:40:50.299   331   331 I /system/bin/recovery: [libfs_mgr]Created logical partition vendor on device /dev/block/dm-2
+06-23 20:40:50.304   331   331 I recovery: type=1400 audit(0.0:31): avc: denied { ioctl } for path="/dev/block/dm-1" dev="tmpfs" ino=9558 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1
+06-23 20:40:50.344   331   331 I recovery: type=1400 audit(0.0:32): avc: denied { ioctl } for path="/dev/block/dm-2" dev="tmpfs" ino=9560 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1
+06-23 20:40:50.376   331   331 I recovery: type=1400 audit(0.0:33): avc: denied { ioctl } for path="/dev/block/dm-0" dev="tmpfs" ino=9555 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1
+06-23 20:40:50.408   331   331 I recovery: type=1400 audit(0.0:34): avc: denied { read } for name="mmcblk0p37" dev="sysfs" ino=29204 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+06-23 20:40:50.408   331   331 I recovery: type=1400 audit(0.0:35): avc: denied { open } for path="/sys/devices/platform/bootdevice/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p37" dev="sysfs" ino=29204 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+06-23 20:40:50.408   331   331 I recovery: type=1400 audit(0.0:36): avc: denied { read } for name="dev" dev="sysfs" ino=28443 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+06-23 20:40:50.448   331   331 I recovery: type=1400 audit(0.0:37): avc: denied { getattr } for path="/data/media" dev="mmcblk0p37" ino=647169 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0 tclass=dir permissive=1
+06-23 20:40:50.604   331   331 I recovery: type=1400 audit(0.0:38): avc: denied { search } for name="unencrypted" dev="mmcblk0p37" ino=2801665 scontext=u:r:recovery:s0 tcontext=u:object_r:unencrypted_data_file:s0 tclass=dir permissive=1
+06-23 20:40:50.604   331   331 I recovery: type=1400 audit(0.0:39): avc: denied { getattr } for path="/data/unencrypted/key/version" dev="mmcblk0p37" ino=2801667 scontext=u:r:recovery:s0 tcontext=u:object_r:unencrypted_data_file:s0 tclass=file permissive=1
+06-23 20:40:50.608   331   331 I recovery: type=1400 audit(0.0:40): avc: denied { read } for name="version" dev="mmcblk0p37" ino=2801667 scontext=u:r:recovery:s0 tcontext=u:object_r:unencrypted_data_file:s0 tclass=file permissive=1
+06-23 20:40:50.608   331   331 I recovery: type=1400 audit(0.0:41): avc: denied { open } for path="/data/unencrypted/key/version" dev="mmcblk0p37" ino=2801667 scontext=u:r:recovery:s0 tcontext=u:object_r:unencrypted_data_file:s0 tclass=file permissive=1
+06-23 20:40:50.611   331   331 I /system/bin/recovery: fscrypt_initialize_systemwide_keys
+06-23 20:40:51.613   331   331 W ServiceManagement: Waited for hwservicemanager.ready for a second, waiting another...
+06-23 20:40:52.614   331   331 I chatty  : uid=0(root) /system/bin/recovery identical 1 line
+06-23 20:40:53.614   331   331 W ServiceManagement: Waited for hwservicemanager.ready for a second, waiting another...
+06-23 20:40:54.404   390   391 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+06-23 20:40:54.405   390   391 I adbd    : UsbFfsConnection constructed
+06-23 20:40:54.406   390   392 I adbd    : USB event: FUNCTIONFS_BIND
+06-23 20:40:54.615   331   331 W ServiceManagement: Waited for hwservicemanager.ready for a second, waiting another...
+06-23 20:40:55.066   390   392 I adbd    : USB event: FUNCTIONFS_ENABLE
+06-23 20:40:55.254   390   390 I adbd    : UsbFfs: already offline
+06-23 20:40:55.615   331   331 W ServiceManagement: Waited for hwservicemanager.ready for a second, waiting another...
